@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Your Screening Result · CardioCheck{% endblock %}
+
+{% block content %}
+{% set detected = results|int == 1 %}
+<section class="result-page">
+    <a class="back-link" href="{{ url_for('index') }}">
+        <svg viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M16 10H5m5 5-5-5 5-5" />
+        </svg>
+        New assessment
+    </a>
+
+    <article class="result-card {{ 'result-card--positive' if detected else 'result-card--negative' }}">
+        <div class="result-orbit" aria-hidden="true">
+            <div class="result-icon">
+                {% if detected %}
+                <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M32 53S8 39 8 22a13 13 0 0 1 24-6.6A13 13 0 0 1 56 22c0 17-24 31-24 31Z" />
+                    <path d="M16 32h10l4-8 7 17 5-9h7" />
+                </svg>
+                {% else %}
+                <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M32 53S8 39 8 22a13 13 0 0 1 24-6.6A13 13 0 0 1 56 22c0 17-24 31-24 31Z" />
+                    <path d="m23 32 6 6 13-14" />
+                </svg>
+                {% endif %}
+            </div>
+        </div>
+
+        <p class="result-eyebrow">{{ "SCREENING SIGNAL" if detected else "SCREENING SUMMARY" }}</p>
+        <h1>
+            {% if detected %}
+                Potential heart disease <span>found</span>
+            {% else %}
+                No potential heart disease <span>found</span>
+            {% endif %}
+        </h1>
+        <p class="result-copy">
+            {% if detected %}
+                The model identified a potential heart-disease signal in the information provided.
+                Please discuss this result with a qualified healthcare professional.
+            {% else %}
+                The model did not identify a potential heart-disease signal in the information provided.
+                This result does not rule out heart disease or replace medical advice.
+            {% endif %}
+        </p>
+
+        <div class="result-disclaimer">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+                <circle cx="10" cy="10" r="7.5" />
+                <path d="M10 9v4m0-7h.01" />
+            </svg>
+            <p>This is an automated screening estimate, not a diagnosis. If you have symptoms or concerns, contact a medical professional. For urgent symptoms, seek emergency care.</p>
+        </div>
+
+        <a class="submit-button result-button" href="{{ url_for('index') }}">
+            Start another assessment
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M4 10h11m-5-5 5 5-5 5" />
+            </svg>
+        </a>
+    </article>
+
+    <p class="page-footnote">Your result is based on the submitted values and the model currently available in this app.</p>
+</section>
+{% endblock %}

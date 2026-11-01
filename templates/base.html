@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f8fa">
+    <title>{% block title %}CardioCheck{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="{{ url_for('index') }}" aria-label="CardioCheck home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M16 27S4 20 4 11.5A6.5 6.5 0 0 1 16 8.2a6.5 6.5 0 0 1 12 3.3C28 20 16 27 16 27Z" />
+                    <path d="M7.5 16h5l2-4 3.2 8 2.2-4h4.1" />
+                </svg>
+            </span>
+            <span>Cardio<span class="brand-accent">Check</span></span>
+        </a>
+        <div class="header-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            Heart health screening tool
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <span>For informational use only</span>
+        <span class="footer-separator" aria-hidden="true">·</span>
+        <span>Not a diagnosis or substitute for professional medical care</span>
+    </footer>
+</body>
+</html>
