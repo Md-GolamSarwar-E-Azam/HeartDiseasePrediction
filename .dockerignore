@@ -1,0 +1,8 @@
+heartenv/
+.venv/
+.git/
+**/__pycache__/
+*.py[cod]
+catboost_info/
+notebook/
+*.ipynb
