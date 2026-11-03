@@ -1,4 +1,6 @@
 import sys 
+from pathlib import Path
+
 import pandas as pd 
 from src.exception import CustomException 
 from src.utils import load_object 
@@ -10,8 +12,9 @@ class PredictPipelline:
 
     def predict(self,features):
         try:
-            model_path = 'artifacts\model.pkl'
-            preprocessor_path = 'artifacts\preprocessor.pkl'
+            project_root = Path(__file__).resolve().parents[2]
+            model_path = project_root / "artifacts" / "model.pkl"
+            preprocessor_path = project_root / "artifacts" / "preprocessor.pkl"
             model = load_object(file_path = model_path)
             preprocessor = load_object(file_path = preprocessor_path)
             data_scaled = preprocessor.transform(features)
