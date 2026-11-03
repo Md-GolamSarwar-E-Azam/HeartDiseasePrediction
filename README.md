@@ -1,4 +1,4 @@
-##  End to End Heart Disease Prediction App
+##  End to End Heart Disease Prediction App: CardioCheck
 
 ## Run from terminal:
 
