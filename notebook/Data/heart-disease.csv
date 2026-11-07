@@ -1,304 +1,304 @@
 ﻿age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target
-63,1,3,145,233,1,0,150,0,2.3,0,0,1,1
-37,1,2,130,250,0,1,187,0,3.5,0,0,2,1
-41,0,1,130,204,0,0,172,0,1.4,2,0,2,1
-56,1,1,120,236,0,1,178,0,0.8,2,0,2,1
-57,0,0,120,354,0,1,163,1,0.6,2,0,2,1
-57,1,0,140,192,0,1,148,0,0.4,1,0,1,1
-56,0,1,140,294,0,0,153,0,1.3,1,0,2,1
-44,1,1,120,263,0,1,173,0,0,2,0,3,1
-52,1,2,172,199,1,1,162,0,0.5,2,0,3,1
-57,1,2,150,168,0,1,174,0,1.6,2,0,2,1
-54,1,0,140,239,0,1,160,0,1.2,2,0,2,1
-48,0,2,130,275,0,1,139,0,0.2,2,0,2,1
-49,1,1,130,266,0,1,171,0,0.6,2,0,2,1
-64,1,3,110,211,0,0,144,1,1.8,1,0,2,1
-58,0,3,150,283,1,0,162,0,1,2,0,2,1
-50,0,2,120,219,0,1,158,0,1.6,1,0,2,1
-58,0,2,120,340,0,1,172,0,0,2,0,2,1
-66,0,3,150,226,0,1,114,0,2.6,0,0,2,1
-43,1,0,150,247,0,1,171,0,1.5,2,0,2,1
-69,0,3,140,239,0,1,151,0,1.8,2,2,2,1
-59,1,0,135,234,0,1,161,0,0.5,1,0,3,1
-44,1,2,130,233,0,1,179,1,0.4,2,0,2,1
-42,1,0,140,226,0,1,178,0,0,2,0,2,1
-61,1,2,150,243,1,1,137,1,1,1,0,2,1
-40,1,3,140,199,0,1,178,1,1.4,2,0,3,1
-71,0,1,160,302,0,1,162,0,0.4,2,2,2,1
-59,1,2,150,212,1,1,157,0,1.6,2,0,2,1
-51,1,2,110,175,0,1,123,0,0.6,2,0,2,1
-65,0,2,140,417,1,0,157,0,0.8,2,1,2,1
-53,1,2,130,197,1,0,152,0,1.2,0,0,2,1
-41,0,1,105,198,0,1,168,0,0,2,1,2,1
-65,1,0,120,177,0,1,140,0,0.4,2,0,3,1
-44,1,1,130,219,0,0,188,0,0,2,0,2,1
-54,1,2,125,273,0,0,152,0,0.5,0,1,2,1
-51,1,3,125,213,0,0,125,1,1.4,2,1,2,1
-46,0,2,142,177,0,0,160,1,1.4,0,0,2,1
-54,0,2,135,304,1,1,170,0,0,2,0,2,1
-54,1,2,150,232,0,0,165,0,1.6,2,0,3,1
-65,0,2,155,269,0,1,148,0,0.8,2,0,2,1
-65,0,2,160,360,0,0,151,0,0.8,2,0,2,1
-51,0,2,140,308,0,0,142,0,1.5,2,1,2,1
-48,1,1,130,245,0,0,180,0,0.2,1,0,2,1
-45,1,0,104,208,0,0,148,1,3,1,0,2,1
-53,0,0,130,264,0,0,143,0,0.4,1,0,2,1
-39,1,2,140,321,0,0,182,0,0,2,0,2,1
-52,1,1,120,325,0,1,172,0,0.2,2,0,2,1
-44,1,2,140,235,0,0,180,0,0,2,0,2,1
-47,1,2,138,257,0,0,156,0,0,2,0,2,1
-53,0,2,128,216,0,0,115,0,0,2,0,0,1
-53,0,0,138,234,0,0,160,0,0,2,0,2,1
-51,0,2,130,256,0,0,149,0,0.5,2,0,2,1
-66,1,0,120,302,0,0,151,0,0.4,1,0,2,1
-62,1,2,130,231,0,1,146,0,1.8,1,3,3,1
-44,0,2,108,141,0,1,175,0,0.6,1,0,2,1
-63,0,2,135,252,0,0,172,0,0,2,0,2,1
-52,1,1,134,201,0,1,158,0,0.8,2,1,2,1
-48,1,0,122,222,0,0,186,0,0,2,0,2,1
-45,1,0,115,260,0,0,185,0,0,2,0,2,1
-34,1,3,118,182,0,0,174,0,0,2,0,2,1
-57,0,0,128,303,0,0,159,0,0,2,1,2,1
-71,0,2,110,265,1,0,130,0,0,2,1,2,1
-54,1,1,108,309,0,1,156,0,0,2,0,3,1
-52,1,3,118,186,0,0,190,0,0,1,0,1,1
-41,1,1,135,203,0,1,132,0,0,1,0,1,1
-58,1,2,140,211,1,0,165,0,0,2,0,2,1
-35,0,0,138,183,0,1,182,0,1.4,2,0,2,1
-51,1,2,100,222,0,1,143,1,1.2,1,0,2,1
-45,0,1,130,234,0,0,175,0,0.6,1,0,2,1
-44,1,1,120,220,0,1,170,0,0,2,0,2,1
-62,0,0,124,209,0,1,163,0,0,2,0,2,1
-54,1,2,120,258,0,0,147,0,0.4,1,0,3,1
-51,1,2,94,227,0,1,154,1,0,2,1,3,1
-29,1,1,130,204,0,0,202,0,0,2,0,2,1
-51,1,0,140,261,0,0,186,1,0,2,0,2,1
-43,0,2,122,213,0,1,165,0,0.2,1,0,2,1
-55,0,1,135,250,0,0,161,0,1.4,1,0,2,1
-51,1,2,125,245,1,0,166,0,2.4,1,0,2,1
-59,1,1,140,221,0,1,164,1,0,2,0,2,1
-52,1,1,128,205,1,1,184,0,0,2,0,2,1
-58,1,2,105,240,0,0,154,1,0.6,1,0,3,1
-41,1,2,112,250,0,1,179,0,0,2,0,2,1
-45,1,1,128,308,0,0,170,0,0,2,0,2,1
-60,0,2,102,318,0,1,160,0,0,2,1,2,1
-52,1,3,152,298,1,1,178,0,1.2,1,0,3,1
-42,0,0,102,265,0,0,122,0,0.6,1,0,2,1
-67,0,2,115,564,0,0,160,0,1.6,1,0,3,1
-68,1,2,118,277,0,1,151,0,1,2,1,3,1
-46,1,1,101,197,1,1,156,0,0,2,0,3,1
-54,0,2,110,214,0,1,158,0,1.6,1,0,2,1
-58,0,0,100,248,0,0,122,0,1,1,0,2,1
-48,1,2,124,255,1,1,175,0,0,2,2,2,1
-57,1,0,132,207,0,1,168,1,0,2,0,3,1
-52,1,2,138,223,0,1,169,0,0,2,4,2,1
-54,0,1,132,288,1,0,159,1,0,2,1,2,1
-45,0,1,112,160,0,1,138,0,0,1,0,2,1
-53,1,0,142,226,0,0,111,1,0,2,0,3,1
-62,0,0,140,394,0,0,157,0,1.2,1,0,2,1
-52,1,0,108,233,1,1,147,0,0.1,2,3,3,1
-43,1,2,130,315,0,1,162,0,1.9,2,1,2,1
-53,1,2,130,246,1,0,173,0,0,2,3,2,1
-42,1,3,148,244,0,0,178,0,0.8,2,2,2,1
-59,1,3,178,270,0,0,145,0,4.2,0,0,3,1
-63,0,1,140,195,0,1,179,0,0,2,2,2,1
-42,1,2,120,240,1,1,194,0,0.8,0,0,3,1
-50,1,2,129,196,0,1,163,0,0,2,0,2,1
-68,0,2,120,211,0,0,115,0,1.5,1,0,2,1
-69,1,3,160,234,1,0,131,0,0.1,1,1,2,1
-45,0,0,138,236,0,0,152,1,0.2,1,0,2,1
-50,0,1,120,244,0,1,162,0,1.1,2,0,2,1
-50,0,0,110,254,0,0,159,0,0,2,0,2,1
-64,0,0,180,325,0,1,154,1,0,2,0,2,1
-57,1,2,150,126,1,1,173,0,0.2,2,1,3,1
-64,0,2,140,313,0,1,133,0,0.2,2,0,3,1
-43,1,0,110,211,0,1,161,0,0,2,0,3,1
-55,1,1,130,262,0,1,155,0,0,2,0,2,1
-37,0,2,120,215,0,1,170,0,0,2,0,2,1
-41,1,2,130,214,0,0,168,0,2,1,0,2,1
-56,1,3,120,193,0,0,162,0,1.9,1,0,3,1
-46,0,1,105,204,0,1,172,0,0,2,0,2,1
-46,0,0,138,243,0,0,152,1,0,1,0,2,1
-64,0,0,130,303,0,1,122,0,2,1,2,2,1
-59,1,0,138,271,0,0,182,0,0,2,0,2,1
-41,0,2,112,268,0,0,172,1,0,2,0,2,1
-54,0,2,108,267,0,0,167,0,0,2,0,2,1
-39,0,2,94,199,0,1,179,0,0,2,0,2,1
-34,0,1,118,210,0,1,192,0,0.7,2,0,2,1
-47,1,0,112,204,0,1,143,0,0.1,2,0,2,1
-67,0,2,152,277,0,1,172,0,0,2,1,2,1
-52,0,2,136,196,0,0,169,0,0.1,1,0,2,1
-74,0,1,120,269,0,0,121,1,0.2,2,1,2,1
-54,0,2,160,201,0,1,163,0,0,2,1,2,1
-49,0,1,134,271,0,1,162,0,0,1,0,2,1
-42,1,1,120,295,0,1,162,0,0,2,0,2,1
-41,1,1,110,235,0,1,153,0,0,2,0,2,1
-41,0,1,126,306,0,1,163,0,0,2,0,2,1
-49,0,0,130,269,0,1,163,0,0,2,0,2,1
-60,0,2,120,178,1,1,96,0,0,2,0,2,1
-62,1,1,128,208,1,0,140,0,0,2,0,2,1
-57,1,0,110,201,0,1,126,1,1.5,1,0,1,1
-64,1,0,128,263,0,1,105,1,0.2,1,1,3,1
-51,0,2,120,295,0,0,157,0,0.6,2,0,2,1
-43,1,0,115,303,0,1,181,0,1.2,1,0,2,1
-42,0,2,120,209,0,1,173,0,0,1,0,2,1
-67,0,0,106,223,0,1,142,0,0.3,2,2,2,1
-76,0,2,140,197,0,2,116,0,1.1,1,0,2,1
-70,1,1,156,245,0,0,143,0,0,2,0,2,1
-44,0,2,118,242,0,1,149,0,0.3,1,1,2,1
-60,0,3,150,240,0,1,171,0,0.9,2,0,2,1
-44,1,2,120,226,0,1,169,0,0,2,0,2,1
-42,1,2,130,180,0,1,150,0,0,2,0,2,1
-66,1,0,160,228,0,0,138,0,2.3,2,0,1,1
-71,0,0,112,149,0,1,125,0,1.6,1,0,2,1
-64,1,3,170,227,0,0,155,0,0.6,1,0,3,1
-66,0,2,146,278,0,0,152,0,0,1,1,2,1
-39,0,2,138,220,0,1,152,0,0,1,0,2,1
-58,0,0,130,197,0,1,131,0,0.6,1,0,2,1
-47,1,2,130,253,0,1,179,0,0,2,0,2,1
-35,1,1,122,192,0,1,174,0,0,2,0,2,1
-58,1,1,125,220,0,1,144,0,0.4,1,4,3,1
-56,1,1,130,221,0,0,163,0,0,2,0,3,1
-56,1,1,120,240,0,1,169,0,0,0,0,2,1
-55,0,1,132,342,0,1,166,0,1.2,2,0,2,1
-41,1,1,120,157,0,1,182,0,0,2,0,2,1
-38,1,2,138,175,0,1,173,0,0,2,4,2,1
-38,1,2,138,175,0,1,173,0,0,2,4,2,1
-67,1,0,160,286,0,0,108,1,1.5,1,3,2,0
-67,1,0,120,229,0,0,129,1,2.6,1,2,3,0
-62,0,0,140,268,0,0,160,0,3.6,0,2,2,0
-63,1,0,130,254,0,0,147,0,1.4,1,1,3,0
-53,1,0,140,203,1,0,155,1,3.1,0,0,3,0
-56,1,2,130,256,1,0,142,1,0.6,1,1,1,0
-48,1,1,110,229,0,1,168,0,1,0,0,3,0
-58,1,1,120,284,0,0,160,0,1.8,1,0,2,0
-58,1,2,132,224,0,0,173,0,3.2,2,2,3,0
-60,1,0,130,206,0,0,132,1,2.4,1,2,3,0
-40,1,0,110,167,0,0,114,1,2,1,0,3,0
-60,1,0,117,230,1,1,160,1,1.4,2,2,3,0
-64,1,2,140,335,0,1,158,0,0,2,0,2,0
-43,1,0,120,177,0,0,120,1,2.5,1,0,3,0
-57,1,0,150,276,0,0,112,1,0.6,1,1,1,0
-55,1,0,132,353,0,1,132,1,1.2,1,1,3,0
-65,0,0,150,225,0,0,114,0,1,1,3,3,0
-61,0,0,130,330,0,0,169,0,0,2,0,2,0
-58,1,2,112,230,0,0,165,0,2.5,1,1,3,0
-50,1,0,150,243,0,0,128,0,2.6,1,0,3,0
-44,1,0,112,290,0,0,153,0,0,2,1,2,0
-60,1,0,130,253,0,1,144,1,1.4,2,1,3,0
-54,1,0,124,266,0,0,109,1,2.2,1,1,3,0
-50,1,2,140,233,0,1,163,0,0.6,1,1,3,0
-41,1,0,110,172,0,0,158,0,0,2,0,3,0
-51,0,0,130,305,0,1,142,1,1.2,1,0,3,0
-58,1,0,128,216,0,0,131,1,2.2,1,3,3,0
-54,1,0,120,188,0,1,113,0,1.4,1,1,3,0
-60,1,0,145,282,0,0,142,1,2.8,1,2,3,0
-60,1,2,140,185,0,0,155,0,3,1,0,2,0
-59,1,0,170,326,0,0,140,1,3.4,0,0,3,0
-46,1,2,150,231,0,1,147,0,3.6,1,0,2,0
-67,1,0,125,254,1,1,163,0,0.2,1,2,3,0
-62,1,0,120,267,0,1,99,1,1.8,1,2,3,0
-65,1,0,110,248,0,0,158,0,0.6,2,2,1,0
-44,1,0,110,197,0,0,177,0,0,2,1,2,0
-60,1,0,125,258,0,0,141,1,2.8,1,1,3,0
-58,1,0,150,270,0,0,111,1,0.8,2,0,3,0
-68,1,2,180,274,1,0,150,1,1.6,1,0,3,0
-62,0,0,160,164,0,0,145,0,6.2,0,3,3,0
-52,1,0,128,255,0,1,161,1,0,2,1,3,0
-59,1,0,110,239,0,0,142,1,1.2,1,1,3,0
-60,0,0,150,258,0,0,157,0,2.6,1,2,3,0
-49,1,2,120,188,0,1,139,0,2,1,3,3,0
-59,1,0,140,177,0,1,162,1,0,2,1,3,0
-57,1,2,128,229,0,0,150,0,0.4,1,1,3,0
-61,1,0,120,260,0,1,140,1,3.6,1,1,3,0
-39,1,0,118,219,0,1,140,0,1.2,1,0,3,0
-61,0,0,145,307,0,0,146,1,1,1,0,3,0
-56,1,0,125,249,1,0,144,1,1.2,1,1,2,0
-43,0,0,132,341,1,0,136,1,3,1,0,3,0
-62,0,2,130,263,0,1,97,0,1.2,1,1,3,0
-63,1,0,130,330,1,0,132,1,1.8,2,3,3,0
-65,1,0,135,254,0,0,127,0,2.8,1,1,3,0
-48,1,0,130,256,1,0,150,1,0,2,2,3,0
-63,0,0,150,407,0,0,154,0,4,1,3,3,0
-55,1,0,140,217,0,1,111,1,5.6,0,0,3,0
-65,1,3,138,282,1,0,174,0,1.4,1,1,2,0
-56,0,0,200,288,1,0,133,1,4,0,2,3,0
-54,1,0,110,239,0,1,126,1,2.8,1,1,3,0
-70,1,0,145,174,0,1,125,1,2.6,0,0,3,0
-62,1,1,120,281,0,0,103,0,1.4,1,1,3,0
-35,1,0,120,198,0,1,130,1,1.6,1,0,3,0
-59,1,3,170,288,0,0,159,0,0.2,1,0,3,0
-64,1,2,125,309,0,1,131,1,1.8,1,0,3,0
-47,1,2,108,243,0,1,152,0,0,2,0,2,0
-57,1,0,165,289,1,0,124,0,1,1,3,3,0
-55,1,0,160,289,0,0,145,1,0.8,1,1,3,0
-64,1,0,120,246,0,0,96,1,2.2,0,1,2,0
-70,1,0,130,322,0,0,109,0,2.4,1,3,2,0
-51,1,0,140,299,0,1,173,1,1.6,2,0,3,0
-58,1,0,125,300,0,0,171,0,0,2,2,3,0
-60,1,0,140,293,0,0,170,0,1.2,1,2,3,0
-77,1,0,125,304,0,0,162,1,0,2,3,2,0
-35,1,0,126,282,0,0,156,1,0,2,0,3,0
-70,1,2,160,269,0,1,112,1,2.9,1,1,3,0
-59,0,0,174,249,0,1,143,1,0,1,0,2,0
-64,1,0,145,212,0,0,132,0,2,1,2,1,0
-57,1,0,152,274,0,1,88,1,1.2,1,1,3,0
-56,1,0,132,184,0,0,105,1,2.1,1,1,1,0
-48,1,0,124,274,0,0,166,0,0.5,1,0,3,0
-56,0,0,134,409,0,0,150,1,1.9,1,2,3,0
-66,1,1,160,246,0,1,120,1,0,1,3,1,0
-54,1,1,192,283,0,0,195,0,0,2,1,3,0
-69,1,2,140,254,0,0,146,0,2,1,3,3,0
-51,1,0,140,298,0,1,122,1,4.2,1,3,3,0
-43,1,0,132,247,1,0,143,1,0.1,1,4,3,0
-62,0,0,138,294,1,1,106,0,1.9,1,3,2,0
-67,1,0,100,299,0,0,125,1,0.9,1,2,2,0
-59,1,3,160,273,0,0,125,0,0,2,0,2,0
-45,1,0,142,309,0,0,147,1,0,1,3,3,0
-58,1,0,128,259,0,0,130,1,3,1,2,3,0
-50,1,0,144,200,0,0,126,1,0.9,1,0,3,0
-62,0,0,150,244,0,1,154,1,1.4,1,0,2,0
-38,1,3,120,231,0,1,182,1,3.8,1,0,3,0
-66,0,0,178,228,1,1,165,1,1,1,2,3,0
-52,1,0,112,230,0,1,160,0,0,2,1,2,0
-53,1,0,123,282,0,1,95,1,2,1,2,3,0
-63,0,0,108,269,0,1,169,1,1.8,1,2,2,0
-54,1,0,110,206,0,0,108,1,0,1,1,2,0
-66,1,0,112,212,0,0,132,1,0.1,2,1,2,0
-55,0,0,180,327,0,2,117,1,3.4,1,0,2,0
-49,1,2,118,149,0,0,126,0,0.8,2,3,2,0
-54,1,0,122,286,0,0,116,1,3.2,1,2,2,0
-56,1,0,130,283,1,0,103,1,1.6,0,0,3,0
-46,1,0,120,249,0,0,144,0,0.8,2,0,3,0
-61,1,3,134,234,0,1,145,0,2.6,1,2,2,0
-67,1,0,120,237,0,1,71,0,1,1,0,2,0
-58,1,0,100,234,0,1,156,0,0.1,2,1,3,0
-47,1,0,110,275,0,0,118,1,1,1,1,2,0
-52,1,0,125,212,0,1,168,0,1,2,2,3,0
-58,1,0,146,218,0,1,105,0,2,1,1,3,0
-57,1,1,124,261,0,1,141,0,0.3,2,0,3,0
-58,0,1,136,319,1,0,152,0,0,2,2,2,0
-61,1,0,138,166,0,0,125,1,3.6,1,1,2,0
-42,1,0,136,315,0,1,125,1,1.8,1,0,1,0
-52,1,0,128,204,1,1,156,1,1,1,0,0,0
-59,1,2,126,218,1,1,134,0,2.2,1,1,1,0
-40,1,0,152,223,0,1,181,0,0,2,0,3,0
-61,1,0,140,207,0,0,138,1,1.9,2,1,3,0
-46,1,0,140,311,0,1,120,1,1.8,1,2,3,0
-59,1,3,134,204,0,1,162,0,0.8,2,2,2,0
-57,1,1,154,232,0,0,164,0,0,2,1,2,0
-57,1,0,110,335,0,1,143,1,3,1,1,3,0
-55,0,0,128,205,0,2,130,1,2,1,1,3,0
-61,1,0,148,203,0,1,161,0,0,2,1,3,0
-58,1,0,114,318,0,2,140,0,4.4,0,3,1,0
-58,0,0,170,225,1,0,146,1,2.8,1,2,1,0
-67,1,2,152,212,0,0,150,0,0.8,1,0,3,0
-44,1,0,120,169,0,1,144,1,2.8,0,0,1,0
-63,1,0,140,187,0,0,144,1,4,2,2,3,0
-63,0,0,124,197,0,1,136,1,0,1,0,2,0
-59,1,0,164,176,1,0,90,0,1,1,2,1,0
-57,0,0,140,241,0,1,123,1,0.2,1,0,3,0
-45,1,3,110,264,0,1,132,0,1.2,1,0,3,0
-68,1,0,144,193,1,1,141,0,3.4,1,2,3,0
-57,1,0,130,131,0,1,115,1,1.2,1,1,3,0
-57,0,1,130,236,0,0,174,0,0,1,1,2,0
+76,female,Non-anginal pain,140,197,FALSE,Left ventricular hypertrophy,116,no,1.1,Flatsloping,0,2,1
+55,female,Typical angina,180,327,FALSE,Left ventricular hypertrophy,117,yes,3.4,Flatsloping,0,2,0
+55,female,Typical angina,128,205,FALSE,Left ventricular hypertrophy,130,yes,2,Flatsloping,1,3,0
+58,male,Typical angina,114,318,FALSE,Left ventricular hypertrophy,140,no,4.4,Upsloping,3,1,0
+63,male,Asymptomatic,145,233,TRUE,Nothing to note,150,no,2.3,Upsloping,0,1,1
+41,female,Atypical angina,130,204,FALSE,Nothing to note,172,no,1.4,Downsloping,0,2,1
+56,female,Atypical angina,140,294,FALSE,Nothing to note,153,no,1.3,Flatsloping,0,2,1
+64,male,Asymptomatic,110,211,FALSE,Nothing to note,144,yes,1.8,Flatsloping,0,2,1
+58,,Asymptomatic,150,283,TRUE,Nothing to note,162,no,1,Downsloping,0,2,1
+65,female,Non-anginal pain,140,417,TRUE,Nothing to note,157,no,0.8,Downsloping,1,2,1
+53,male,Non-anginal pain,130,197,TRUE,Nothing to note,152,no,1.2,Upsloping,0,2,1
+44,male,Atypical angina,130,219,FALSE,Nothing to note,188,no,0,Downsloping,0,2,1
+54,male,Non-anginal pain,125,273,FALSE,Nothing to note,152,no,0.5,Upsloping,1,2,1
+51,male,Asymptomatic,125,213,FALSE,Nothing to note,125,yes,1.4,Downsloping,1,2,1
+46,female,Non-anginal pain,142,177,FALSE,Nothing to note,160,yes,1.4,Upsloping,0,2,1
+54,male,Non-anginal pain,150,232,FALSE,Nothing to note,165,no,1.6,Downsloping,0,3,1
+65,female,Non-anginal pain,160,360,FALSE,Nothing to note,151,no,0.8,Downsloping,0,2,1
+51,female,Non-anginal pain,140,308,FALSE,Nothing to note,142,no,1.5,Downsloping,1,2,1
+48,male,Atypical angina,130,245,FALSE,Nothing to note,180,no,0.2,Flatsloping,0,2,1
+45,male,Typical angina,104,208,FALSE,Nothing to note,148,yes,3,Flatsloping,0,2,1
+,female,Typical angina,130,264,FALSE,Nothing to note,143,no,0.4,Flatsloping,0,2,1
+39,male,Non-anginal pain,140,321,FALSE,Nothing to note,182,no,0,Downsloping,0,2,1
+44,male,Non-anginal pain,140,235,FALSE,Nothing to note,180,no,0,Downsloping,0,2,1
+47,male,Non-anginal pain,138,257,FALSE,Nothing to note,156,no,0,Downsloping,0,2,1
+53,female,Non-anginal pain,128,216,FALSE,Nothing to note,115,no,0,Downsloping,0,0,1
+53,,Typical angina,138,234,FALSE,Nothing to note,160,no,0,Downsloping,0,2,1
+51,female,Non-anginal pain,130,256,FALSE,Nothing to note,149,no,0.5,Downsloping,0,2,1
+66,male,Typical angina,120,302,FALSE,Nothing to note,151,no,0.4,Flatsloping,0,2,1
+63,female,Non-anginal pain,135,252,FALSE,Nothing to note,172,no,0,Downsloping,0,2,1
+48,male,Typical angina,122,222,FALSE,Nothing to note,186,no,0,Downsloping,0,2,1
+45,male,Typical angina,115,260,FALSE,Nothing to note,185,no,0,Downsloping,0,2,1
+34,male,Asymptomatic,118,182,FALSE,Nothing to note,174,no,0,Downsloping,0,2,1
+57,female,Typical angina,128,303,FALSE,Nothing to note,159,no,0,Downsloping,1,2,1
+,female,Non-anginal pain,110,265,TRUE,Nothing to note,130,no,0,Downsloping,1,2,1
+52,male,Asymptomatic,118,186,FALSE,Nothing to note,190,no,0,Flatsloping,0,1,1
+58,male,Non-anginal pain,140,211,TRUE,Nothing to note,165,no,0,Downsloping,0,2,1
+45,female,Atypical angina,130,234,FALSE,Nothing to note,175,no,0.6,Flatsloping,0,2,1
+54,male,Non-anginal pain,120,258,FALSE,Nothing to note,147,no,0.4,Flatsloping,0,3,1
+29,male,Atypical angina,130,204,FALSE,Nothing to note,202,no,0,Downsloping,0,2,1
+51,male,Typical angina,140,261,FALSE,Nothing to note,186,yes,0,Downsloping,0,2,1
+55,female,Atypical angina,135,250,FALSE,Nothing to note,161,no,1.4,Flatsloping,0,2,1
+51,male,Non-anginal pain,125,245,TRUE,Nothing to note,166,no,2.4,Flatsloping,0,2,1
+58,male,Non-anginal pain,105,240,FALSE,Nothing to note,154,yes,0.6,Flatsloping,0,3,1
+45,male,Atypical angina,128,308,FALSE,Nothing to note,170,no,0,Downsloping,0,2,1
+42,female,Typical angina,102,265,FALSE,Nothing to note,122,no,0.6,Flatsloping,0,2,1
+67,female,Non-anginal pain,115,564,FALSE,Nothing to note,160,no,1.6,Flatsloping,0,3,1
+58,female,Typical angina,100,248,FALSE,Nothing to note,122,no,1,Flatsloping,0,2,1
+54,female,Atypical angina,132,288,TRUE,Nothing to note,159,yes,0,Downsloping,1,2,1
+53,male,Typical angina,142,226,FALSE,Nothing to note,111,yes,0,Downsloping,0,3,1
+62,,Typical angina,140,394,FALSE,Nothing to note,157,no,1.2,Flatsloping,0,2,1
+53,male,Non-anginal pain,130,246,TRUE,Nothing to note,173,no,0,Downsloping,3,2,1
+,male,Asymptomatic,148,244,FALSE,Nothing to note,178,no,0.8,Downsloping,2,2,1
+59,male,Asymptomatic,178,270,FALSE,Nothing to note,145,no,4.2,Upsloping,0,3,1
+68,female,Non-anginal pain,120,211,FALSE,Nothing to note,115,no,1.5,Flatsloping,0,2,1
+69,male,Asymptomatic,160,234,TRUE,Nothing to note,131,no,0.1,Flatsloping,1,2,1
+45,female,Typical angina,138,236,FALSE,Nothing to note,152,yes,0.2,Flatsloping,0,2,1
+50,female,Typical angina,110,254,FALSE,Nothing to note,159,no,0,Downsloping,0,2,1
+41,male,Non-anginal pain,130,214,FALSE,Nothing to note,168,no,2,Flatsloping,0,2,1
+56,male,Asymptomatic,120,193,FALSE,Nothing to note,162,no,1.9,Flatsloping,0,3,1
+46,female,Typical angina,138,243,FALSE,Nothing to note,152,yes,0,Flatsloping,0,2,1
+59,male,Typical angina,138,271,FALSE,Nothing to note,182,no,0,Downsloping,0,2,1
+41,female,Non-anginal pain,112,268,FALSE,Nothing to note,172,yes,0,Downsloping,0,2,1
+54,female,Non-anginal pain,108,267,FALSE,Nothing to note,167,no,0,Downsloping,0,2,1
+52,female,Non-anginal pain,136,196,FALSE,Nothing to note,169,no,0.1,Flatsloping,0,2,1
+74,female,Atypical angina,120,269,FALSE,Nothing to note,121,yes,0.2,Downsloping,1,2,1
+62,male,Atypical angina,128,208,TRUE,Nothing to note,140,no,0,Downsloping,0,2,1
+51,female,Non-anginal pain,120,295,FALSE,Nothing to note,157,no,0.6,Downsloping,0,2,1
+70,male,Atypical angina,156,245,FALSE,Nothing to note,143,no,0,Downsloping,0,2,1
+66,male,Typical angina,160,228,FALSE,Nothing to note,138,no,2.3,Downsloping,0,1,1
+64,male,Asymptomatic,170,227,FALSE,Nothing to note,155,no,0.6,Flatsloping,0,3,1
+66,female,Non-anginal pain,146,278,FALSE,Nothing to note,152,no,0,Flatsloping,1,2,1
+56,male,Atypical angina,130,221,FALSE,Nothing to note,163,no,0,Downsloping,0,3,1
+,male,Typical angina,160,286,FALSE,Nothing to note,108,yes,1.5,Flatsloping,3,2,0
+67,male,Typical angina,120,229,FALSE,Nothing to note,129,yes,2.6,Flatsloping,2,3,0
+62,female,Typical angina,140,268,FALSE,Nothing to note,160,no,3.6,Upsloping,2,2,0
+63,male,Typical angina,130,254,FALSE,Nothing to note,147,no,1.4,Flatsloping,1,3,0
+53,male,Typical angina,140,203,TRUE,Nothing to note,155,yes,3.1,Upsloping,0,3,0
+56,male,Non-anginal pain,130,256,TRUE,Nothing to note,142,yes,0.6,Flatsloping,1,1,0
+58,male,Atypical angina,120,284,FALSE,Nothing to note,160,no,1.8,Flatsloping,0,2,0
+58,male,Non-anginal pain,132,224,FALSE,Nothing to note,173,no,3.2,Downsloping,2,3,0
+60,male,Typical angina,130,206,FALSE,Nothing to note,132,yes,2.4,Flatsloping,2,3,0
+40,male,Typical angina,110,167,FALSE,Nothing to note,114,yes,2,Flatsloping,0,3,0
+43,male,Typical angina,120,177,FALSE,Nothing to note,120,yes,2.5,Flatsloping,0,3,0
+57,male,Typical angina,150,276,FALSE,Nothing to note,112,yes,0.6,Flatsloping,1,1,0
+65,female,Typical angina,150,225,FALSE,Nothing to note,114,no,1,Flatsloping,3,3,0
+61,female,Typical angina,130,330,FALSE,Nothing to note,169,no,0,Downsloping,0,2,0
+58,,Non-anginal pain,112,230,FALSE,Nothing to note,165,no,2.5,Flatsloping,1,3,0
+50,male,Typical angina,150,243,FALSE,Nothing to note,128,no,2.6,Flatsloping,0,3,0
+44,male,Typical angina,112,290,FALSE,Nothing to note,153,no,0,Downsloping,1,2,0
+54,male,Typical angina,124,266,FALSE,Nothing to note,109,yes,2.2,Flatsloping,1,3,0
+41,male,Typical angina,110,172,FALSE,Nothing to note,158,no,0,Downsloping,0,3,0
+58,male,Typical angina,128,216,FALSE,Nothing to note,131,yes,2.2,Flatsloping,3,3,0
+60,male,Typical angina,145,282,FALSE,Nothing to note,142,yes,2.8,Flatsloping,2,3,0
+60,male,Non-anginal pain,140,185,FALSE,Nothing to note,155,no,3,Flatsloping,0,2,0
+59,male,Typical angina,170,326,FALSE,Nothing to note,140,yes,3.4,Upsloping,0,3,0
+65,male,Typical angina,110,248,FALSE,Nothing to note,158,no,0.6,Downsloping,2,1,0
+44,male,Typical angina,110,197,FALSE,Nothing to note,177,no,0,Downsloping,1,2,0
+60,male,Typical angina,125,258,FALSE,Nothing to note,141,yes,2.8,Flatsloping,1,3,0
+58,male,Typical angina,150,270,FALSE,Nothing to note,111,yes,0.8,Downsloping,0,3,0
+68,male,Non-anginal pain,180,274,TRUE,Nothing to note,150,yes,1.6,Flatsloping,0,3,0
+62,female,Typical angina,160,164,FALSE,Nothing to note,145,no,6.2,Upsloping,3,3,0
+59,male,Typical angina,110,239,FALSE,Nothing to note,142,yes,1.2,Flatsloping,1,3,0
+60,female,Typical angina,150,258,FALSE,Nothing to note,157,no,2.6,Flatsloping,2,3,0
+57,male,Non-anginal pain,128,229,FALSE,Nothing to note,150,no,0.4,Flatsloping,1,3,0
+61,female,Typical angina,145,307,FALSE,Nothing to note,146,yes,1,Flatsloping,0,3,0
+56,male,Typical angina,125,249,TRUE,Nothing to note,144,yes,1.2,Flatsloping,1,2,0
+43,female,Typical angina,132,341,TRUE,Nothing to note,136,yes,3,Flatsloping,0,3,0
+63,male,Typical angina,130,330,TRUE,Nothing to note,132,yes,1.8,Downsloping,3,3,0
+65,male,Typical angina,135,254,FALSE,Nothing to note,127,no,2.8,Flatsloping,1,3,0
+48,male,Typical angina,130,256,TRUE,Nothing to note,150,yes,0,Downsloping,2,3,0
+63,female,Typical angina,150,407,FALSE,Nothing to note,154,no,4,Flatsloping,3,3,0
+65,male,Asymptomatic,138,282,TRUE,Nothing to note,174,no,1.4,Flatsloping,1,2,0
+56,female,Typical angina,200,288,TRUE,Nothing to note,133,yes,4,Upsloping,2,3,0
+62,male,Atypical angina,120,281,FALSE,Nothing to note,103,no,1.4,Flatsloping,1,3,0
+59,male,Asymptomatic,170,288,FALSE,Nothing to note,159,no,0.2,Flatsloping,0,3,0
+57,male,Typical angina,165,289,TRUE,Nothing to note,124,no,1,Flatsloping,3,3,0
+55,male,Typical angina,160,289,FALSE,Nothing to note,145,yes,0.8,Flatsloping,1,3,0
+64,male,Typical angina,120,246,FALSE,Nothing to note,96,yes,2.2,Upsloping,1,2,0
+70,male,Typical angina,130,322,FALSE,Nothing to note,109,no,2.4,Flatsloping,3,2,0
+58,male,Typical angina,125,300,FALSE,Nothing to note,171,no,0,Downsloping,2,3,0
+60,male,Typical angina,140,293,FALSE,Nothing to note,170,no,1.2,Flatsloping,2,3,0
+77,male,Typical angina,125,304,FALSE,Nothing to note,162,yes,0,Downsloping,3,2,0
+35,male,Typical angina,126,282,FALSE,Nothing to note,156,yes,0,Downsloping,0,3,0
+64,male,Typical angina,145,212,FALSE,Nothing to note,132,no,2,Flatsloping,2,1,0
+56,male,Typical angina,132,184,FALSE,Nothing to note,105,yes,2.1,Flatsloping,1,1,0
+48,male,Typical angina,124,274,FALSE,Nothing to note,166,no,0.5,Flatsloping,0,3,0
+56,female,Typical angina,134,409,FALSE,Nothing to note,150,yes,1.9,Flatsloping,2,3,0
+54,male,Atypical angina,192,283,FALSE,Nothing to note,195,no,0,Downsloping,1,3,0
+69,male,Non-anginal pain,140,254,FALSE,Nothing to note,146,no,2,Flatsloping,3,3,0
+43,male,Typical angina,132,247,TRUE,Nothing to note,143,yes,0.1,Flatsloping,4,3,0
+67,male,Typical angina,100,299,FALSE,Nothing to note,125,yes,0.9,Flatsloping,2,2,0
+59,male,Asymptomatic,160,273,FALSE,Nothing to note,125,no,0,Downsloping,0,2,0
+45,male,Typical angina,142,309,FALSE,Nothing to note,147,yes,0,Flatsloping,3,3,0
+58,male,Typical angina,128,259,FALSE,Nothing to note,130,yes,3,Flatsloping,2,3,0
+50,male,Typical angina,144,200,FALSE,Nothing to note,126,yes,0.9,Flatsloping,0,3,0
+54,male,Typical angina,110,206,FALSE,Nothing to note,108,yes,0,Flatsloping,1,2,0
+66,male,Typical angina,112,212,FALSE,Nothing to note,132,yes,0.1,Downsloping,1,2,0
+49,male,Non-anginal pain,118,149,FALSE,Nothing to note,126,no,0.8,Downsloping,3,2,0
+54,male,Typical angina,122,286,FALSE,Nothing to note,116,yes,3.2,Flatsloping,2,2,0
+56,male,Typical angina,130,283,TRUE,Nothing to note,103,yes,1.6,Upsloping,0,3,0
+46,male,Typical angina,120,249,FALSE,Nothing to note,144,no,0.8,Downsloping,0,3,0
+47,male,Typical angina,110,275,FALSE,Nothing to note,118,yes,1,Flatsloping,1,2,0
+58,female,Atypical angina,136,319,TRUE,Nothing to note,152,no,0,Downsloping,2,2,0
+61,male,Typical angina,138,166,FALSE,Nothing to note,125,yes,3.6,Flatsloping,1,2,0
+61,male,Typical angina,140,207,FALSE,Nothing to note,138,yes,1.9,Downsloping,1,3,0
+57,male,Atypical angina,154,232,FALSE,Nothing to note,164,no,0,Downsloping,1,2,0
+58,female,Typical angina,170,225,TRUE,Nothing to note,146,yes,2.8,Flatsloping,2,1,0
+67,male,Non-anginal pain,152,212,FALSE,Nothing to note,150,no,0.8,Flatsloping,0,3,0
+63,male,Typical angina,140,187,FALSE,Nothing to note,144,yes,4,Downsloping,2,3,0
+59,male,Typical angina,164,176,TRUE,Nothing to note,90,no,1,Flatsloping,2,1,0
+57,female,Atypical angina,130,236,FALSE,Nothing to note,174,no,0,Flatsloping,1,2,0
+37,male,Non-anginal pain,130,250,FALSE,ST-T Wave abnormality,187,no,3.5,Upsloping,0,2,1
+56,male,Atypical angina,120,236,FALSE,ST-T Wave abnormality,178,no,0.8,Downsloping,0,2,1
+57,female,Typical angina,120,354,FALSE,ST-T Wave abnormality,163,yes,0.6,Downsloping,0,2,1
+57,male,Typical angina,140,192,FALSE,ST-T Wave abnormality,148,no,0.4,Flatsloping,0,1,1
+44,male,Atypical angina,120,263,FALSE,ST-T Wave abnormality,173,no,0,Downsloping,0,3,1
+52,male,Non-anginal pain,172,199,TRUE,ST-T Wave abnormality,162,no,0.5,Downsloping,0,3,1
+57,male,Non-anginal pain,150,168,FALSE,ST-T Wave abnormality,174,no,1.6,Downsloping,0,2,1
+54,male,Typical angina,140,239,FALSE,ST-T Wave abnormality,160,no,1.2,Downsloping,0,2,1
+48,female,Non-anginal pain,130,275,FALSE,ST-T Wave abnormality,139,no,0.2,Downsloping,0,2,1
+49,male,Atypical angina,130,266,FALSE,ST-T Wave abnormality,171,no,0.6,Downsloping,0,2,1
+50,female,Non-anginal pain,120,219,FALSE,ST-T Wave abnormality,158,no,1.6,Flatsloping,0,2,1
+58,female,Non-anginal pain,120,340,FALSE,ST-T Wave abnormality,172,no,0,Downsloping,0,2,1
+66,female,Asymptomatic,150,226,FALSE,ST-T Wave abnormality,114,no,2.6,Upsloping,0,2,1
+43,male,Typical angina,150,247,FALSE,ST-T Wave abnormality,171,no,1.5,Downsloping,0,2,1
+69,female,Asymptomatic,140,239,FALSE,ST-T Wave abnormality,151,no,1.8,Downsloping,2,2,1
+59,male,Typical angina,135,234,FALSE,ST-T Wave abnormality,161,no,0.5,Flatsloping,0,3,1
+44,male,Non-anginal pain,130,233,FALSE,ST-T Wave abnormality,179,yes,0.4,Downsloping,0,2,1
+42,male,Typical angina,140,226,FALSE,ST-T Wave abnormality,178,no,0,Downsloping,0,2,1
+61,male,Non-anginal pain,150,243,TRUE,ST-T Wave abnormality,137,yes,1,Flatsloping,0,2,1
+40,male,Asymptomatic,140,199,FALSE,ST-T Wave abnormality,178,yes,1.4,Downsloping,0,3,1
+71,female,Atypical angina,160,302,FALSE,ST-T Wave abnormality,162,no,0.4,Downsloping,2,2,1
+59,male,Non-anginal pain,150,212,TRUE,ST-T Wave abnormality,157,no,1.6,Downsloping,0,2,1
+51,male,Non-anginal pain,110,175,FALSE,ST-T Wave abnormality,123,no,0.6,Downsloping,0,2,1
+41,female,Atypical angina,105,198,FALSE,ST-T Wave abnormality,168,no,0,Downsloping,1,2,1
+65,male,Typical angina,120,177,FALSE,ST-T Wave abnormality,140,no,0.4,Downsloping,0,3,1
+54,female,Non-anginal pain,135,304,TRUE,ST-T Wave abnormality,170,no,0,Downsloping,0,2,1
+65,female,Non-anginal pain,155,269,FALSE,ST-T Wave abnormality,148,no,0.8,Downsloping,0,2,1
+52,male,Atypical angina,120,325,FALSE,ST-T Wave abnormality,172,no,0.2,Downsloping,0,2,1
+62,male,Non-anginal pain,130,231,FALSE,ST-T Wave abnormality,146,no,1.8,Flatsloping,3,3,1
+44,female,Non-anginal pain,108,141,FALSE,ST-T Wave abnormality,175,no,0.6,Flatsloping,0,2,1
+52,male,Atypical angina,134,201,FALSE,ST-T Wave abnormality,158,no,0.8,Downsloping,1,2,1
+54,male,Atypical angina,108,309,FALSE,ST-T Wave abnormality,156,no,0,Downsloping,0,3,1
+41,male,Atypical angina,135,203,FALSE,ST-T Wave abnormality,132,no,0,Flatsloping,0,1,1
+35,female,Typical angina,138,183,FALSE,ST-T Wave abnormality,182,no,1.4,Downsloping,0,2,1
+51,male,Non-anginal pain,100,222,FALSE,ST-T Wave abnormality,143,yes,1.2,Flatsloping,0,2,1
+44,male,Atypical angina,120,220,FALSE,ST-T Wave abnormality,170,no,0,Downsloping,0,2,1
+62,female,Typical angina,124,209,FALSE,ST-T Wave abnormality,163,no,0,Downsloping,0,2,1
+51,male,Non-anginal pain,94,227,FALSE,ST-T Wave abnormality,154,yes,0,Downsloping,1,3,1
+43,female,Non-anginal pain,122,213,FALSE,ST-T Wave abnormality,165,no,0.2,Flatsloping,0,2,1
+59,male,Atypical angina,140,221,FALSE,ST-T Wave abnormality,164,yes,0,Downsloping,0,2,1
+52,male,Atypical angina,128,205,TRUE,ST-T Wave abnormality,184,no,0,Downsloping,0,2,1
+41,male,Non-anginal pain,112,250,FALSE,ST-T Wave abnormality,179,no,0,Downsloping,0,2,1
+60,female,Non-anginal pain,102,318,FALSE,ST-T Wave abnormality,160,no,0,Downsloping,1,2,1
+52,male,Asymptomatic,152,298,TRUE,ST-T Wave abnormality,178,no,1.2,Flatsloping,0,3,1
+68,male,Non-anginal pain,118,277,FALSE,ST-T Wave abnormality,151,no,1,Downsloping,1,3,1
+46,male,Atypical angina,101,197,TRUE,ST-T Wave abnormality,156,no,0,Downsloping,0,3,1
+54,female,Non-anginal pain,110,214,FALSE,ST-T Wave abnormality,158,no,1.6,Flatsloping,0,2,1
+48,male,Non-anginal pain,124,255,TRUE,ST-T Wave abnormality,175,no,0,Downsloping,2,2,1
+57,male,Typical angina,132,207,FALSE,ST-T Wave abnormality,168,yes,0,Downsloping,0,3,1
+52,male,Non-anginal pain,138,223,FALSE,ST-T Wave abnormality,169,no,0,Downsloping,4,2,1
+45,female,Atypical angina,112,160,FALSE,ST-T Wave abnormality,138,no,0,Flatsloping,0,2,1
+52,male,Typical angina,108,233,TRUE,ST-T Wave abnormality,147,no,0.1,Downsloping,3,3,1
+43,male,Non-anginal pain,130,315,FALSE,ST-T Wave abnormality,162,no,1.9,Downsloping,1,2,1
+63,female,Atypical angina,140,195,FALSE,ST-T Wave abnormality,179,no,0,Downsloping,2,2,1
+42,male,Non-anginal pain,120,240,TRUE,ST-T Wave abnormality,194,no,0.8,Upsloping,0,3,1
+50,male,Non-anginal pain,129,196,FALSE,ST-T Wave abnormality,163,no,0,Downsloping,0,2,1
+50,female,Atypical angina,120,244,FALSE,ST-T Wave abnormality,162,no,1.1,Downsloping,0,2,1
+64,female,Typical angina,180,325,FALSE,ST-T Wave abnormality,154,yes,0,Downsloping,0,2,1
+57,male,Non-anginal pain,150,126,TRUE,ST-T Wave abnormality,173,no,0.2,Downsloping,1,3,1
+64,female,Non-anginal pain,140,313,FALSE,ST-T Wave abnormality,133,no,0.2,Downsloping,0,3,1
+43,male,Typical angina,110,211,FALSE,ST-T Wave abnormality,161,no,0,Downsloping,0,3,1
+55,male,Atypical angina,130,262,FALSE,ST-T Wave abnormality,155,no,0,Downsloping,0,2,1
+37,female,Non-anginal pain,120,215,FALSE,ST-T Wave abnormality,170,no,0,Downsloping,0,2,1
+46,female,Atypical angina,105,204,FALSE,ST-T Wave abnormality,172,no,0,Downsloping,0,2,1
+64,female,Typical angina,130,303,FALSE,ST-T Wave abnormality,122,no,2,Flatsloping,2,2,1
+39,female,Non-anginal pain,94,199,FALSE,ST-T Wave abnormality,179,no,0,Downsloping,0,2,1
+34,female,Atypical angina,118,210,FALSE,ST-T Wave abnormality,192,no,0.7,Downsloping,0,2,1
+47,male,Typical angina,112,204,FALSE,ST-T Wave abnormality,143,no,0.1,Downsloping,0,2,1
+67,female,Non-anginal pain,152,277,FALSE,ST-T Wave abnormality,172,no,0,Downsloping,1,2,1
+54,female,Non-anginal pain,160,201,FALSE,ST-T Wave abnormality,163,no,0,Downsloping,1,2,1
+49,female,Atypical angina,134,271,FALSE,ST-T Wave abnormality,162,no,0,Flatsloping,0,2,1
+42,male,Atypical angina,120,295,FALSE,ST-T Wave abnormality,162,no,0,Downsloping,0,2,1
+41,male,Atypical angina,110,235,FALSE,ST-T Wave abnormality,153,no,0,Downsloping,0,2,1
+41,female,Atypical angina,126,306,FALSE,ST-T Wave abnormality,163,no,0,Downsloping,0,2,1
+49,female,Typical angina,130,269,FALSE,ST-T Wave abnormality,163,no,0,Downsloping,0,2,1
+60,female,Non-anginal pain,120,178,TRUE,ST-T Wave abnormality,96,no,0,Downsloping,0,2,1
+57,male,Typical angina,110,201,FALSE,ST-T Wave abnormality,126,yes,1.5,Flatsloping,0,1,1
+64,male,Typical angina,128,263,FALSE,ST-T Wave abnormality,105,yes,0.2,Flatsloping,1,3,1
+43,male,Typical angina,115,303,FALSE,ST-T Wave abnormality,181,no,1.2,Flatsloping,0,2,1
+42,female,Non-anginal pain,120,209,FALSE,ST-T Wave abnormality,173,no,0,Flatsloping,0,2,1
+67,female,Typical angina,106,223,FALSE,ST-T Wave abnormality,142,no,0.3,Downsloping,2,2,1
+44,female,Non-anginal pain,118,242,FALSE,ST-T Wave abnormality,149,no,0.3,Flatsloping,1,2,1
+60,female,Asymptomatic,150,240,FALSE,ST-T Wave abnormality,171,no,0.9,Downsloping,0,2,1
+44,male,Non-anginal pain,120,226,FALSE,ST-T Wave abnormality,169,no,0,Downsloping,0,2,1
+42,male,Non-anginal pain,130,180,FALSE,ST-T Wave abnormality,150,no,0,Downsloping,0,2,1
+71,female,Typical angina,112,149,FALSE,ST-T Wave abnormality,125,no,1.6,Flatsloping,0,2,1
+39,female,Non-anginal pain,138,220,FALSE,ST-T Wave abnormality,152,no,0,Flatsloping,0,2,1
+58,female,Typical angina,130,197,FALSE,ST-T Wave abnormality,131,no,0.6,Flatsloping,0,2,1
+47,male,Non-anginal pain,130,253,FALSE,ST-T Wave abnormality,179,no,0,Downsloping,0,2,1
+35,male,Atypical angina,122,192,FALSE,ST-T Wave abnormality,174,no,0,Downsloping,0,2,1
+58,male,Atypical angina,125,220,FALSE,ST-T Wave abnormality,144,no,0.4,Flatsloping,4,3,1
+56,male,Atypical angina,120,240,FALSE,ST-T Wave abnormality,169,no,0,Upsloping,0,2,1
+55,female,Atypical angina,132,342,FALSE,ST-T Wave abnormality,166,no,1.2,Downsloping,0,2,1
+41,male,Atypical angina,120,157,FALSE,ST-T Wave abnormality,182,no,0,Downsloping,0,2,1
+38,male,Non-anginal pain,138,175,FALSE,ST-T Wave abnormality,173,no,0,Downsloping,4,2,1
+38,male,Non-anginal pain,138,175,FALSE,ST-T Wave abnormality,173,no,0,Downsloping,4,2,1
+48,male,Atypical angina,110,229,FALSE,ST-T Wave abnormality,168,no,1,Upsloping,0,3,0
+60,male,Typical angina,117,230,TRUE,ST-T Wave abnormality,160,yes,1.4,Downsloping,2,3,0
+64,male,Non-anginal pain,140,335,FALSE,ST-T Wave abnormality,158,no,0,Downsloping,0,2,0
+55,male,Typical angina,132,353,FALSE,ST-T Wave abnormality,132,yes,1.2,Flatsloping,1,3,0
+60,male,Typical angina,130,253,FALSE,ST-T Wave abnormality,144,yes,1.4,Downsloping,1,3,0
+50,male,Non-anginal pain,140,233,FALSE,ST-T Wave abnormality,163,no,0.6,Flatsloping,1,3,0
+51,female,Typical angina,130,305,FALSE,ST-T Wave abnormality,142,yes,1.2,Flatsloping,0,3,0
+54,male,Typical angina,120,188,FALSE,ST-T Wave abnormality,113,no,1.4,Flatsloping,1,3,0
+46,male,Non-anginal pain,150,231,FALSE,ST-T Wave abnormality,147,no,3.6,Flatsloping,0,2,0
+67,male,Typical angina,125,254,TRUE,ST-T Wave abnormality,163,no,0.2,Flatsloping,2,3,0
+62,male,Typical angina,120,267,FALSE,ST-T Wave abnormality,99,yes,1.8,Flatsloping,2,3,0
+52,male,Typical angina,128,255,FALSE,ST-T Wave abnormality,161,yes,0,Downsloping,1,3,0
+49,male,Non-anginal pain,120,188,FALSE,ST-T Wave abnormality,139,no,2,Flatsloping,3,3,0
+59,male,Typical angina,140,177,FALSE,ST-T Wave abnormality,162,yes,0,Downsloping,1,3,0
+61,male,Typical angina,120,260,FALSE,ST-T Wave abnormality,140,yes,3.6,Flatsloping,1,3,0
+39,male,Typical angina,118,219,FALSE,ST-T Wave abnormality,140,no,1.2,Flatsloping,0,3,0
+62,female,Non-anginal pain,130,263,FALSE,ST-T Wave abnormality,97,no,1.2,Flatsloping,1,3,0
+55,male,Typical angina,140,217,FALSE,ST-T Wave abnormality,111,yes,5.6,Upsloping,0,3,0
+54,male,Typical angina,110,239,FALSE,ST-T Wave abnormality,126,yes,2.8,Flatsloping,1,3,0
+70,male,Typical angina,145,174,FALSE,ST-T Wave abnormality,125,yes,2.6,Upsloping,0,3,0
+35,male,Typical angina,120,198,FALSE,ST-T Wave abnormality,130,yes,1.6,Flatsloping,0,3,0
+64,male,Non-anginal pain,125,309,FALSE,ST-T Wave abnormality,131,yes,1.8,Flatsloping,0,3,0
+47,male,Non-anginal pain,108,243,FALSE,ST-T Wave abnormality,152,no,0,Downsloping,0,2,0
+51,male,Typical angina,140,299,FALSE,ST-T Wave abnormality,173,yes,1.6,Downsloping,0,3,0
+70,male,Non-anginal pain,160,269,FALSE,ST-T Wave abnormality,112,yes,2.9,Flatsloping,1,3,0
+59,female,Typical angina,174,249,FALSE,ST-T Wave abnormality,143,yes,0,Flatsloping,0,2,0
+57,male,Typical angina,152,274,FALSE,ST-T Wave abnormality,88,yes,1.2,Flatsloping,1,3,0
+66,male,Atypical angina,160,246,FALSE,ST-T Wave abnormality,120,yes,0,Flatsloping,3,1,0
+51,male,Typical angina,140,298,FALSE,ST-T Wave abnormality,122,yes,4.2,Flatsloping,3,3,0
+62,female,Typical angina,138,294,TRUE,ST-T Wave abnormality,106,no,1.9,Flatsloping,3,2,0
+62,female,Typical angina,150,244,FALSE,ST-T Wave abnormality,154,yes,1.4,Flatsloping,0,2,0
+38,male,Asymptomatic,120,231,FALSE,ST-T Wave abnormality,182,yes,3.8,Flatsloping,0,3,0
+66,female,Typical angina,178,228,TRUE,ST-T Wave abnormality,165,yes,1,Flatsloping,2,3,0
+52,male,Typical angina,112,230,FALSE,ST-T Wave abnormality,160,no,0,Downsloping,1,2,0
+53,male,Typical angina,123,282,FALSE,ST-T Wave abnormality,95,yes,2,Flatsloping,2,3,0
+63,female,Typical angina,108,269,FALSE,ST-T Wave abnormality,169,yes,1.8,Flatsloping,2,2,0
+61,male,Asymptomatic,134,234,FALSE,ST-T Wave abnormality,145,no,2.6,Flatsloping,2,2,0
+67,male,Typical angina,120,237,FALSE,ST-T Wave abnormality,71,no,1,Flatsloping,0,2,0
+58,male,Typical angina,100,234,FALSE,ST-T Wave abnormality,156,no,0.1,Downsloping,1,3,0
+52,male,Typical angina,125,212,FALSE,ST-T Wave abnormality,168,no,1,Downsloping,2,3,0
+58,male,Typical angina,146,218,FALSE,ST-T Wave abnormality,105,no,2,Flatsloping,1,3,0
+57,male,Atypical angina,124,261,FALSE,ST-T Wave abnormality,141,no,0.3,Downsloping,0,3,0
+42,male,Typical angina,136,315,FALSE,ST-T Wave abnormality,125,yes,1.8,Flatsloping,0,1,0
+52,male,Typical angina,128,204,TRUE,ST-T Wave abnormality,156,yes,1,Flatsloping,0,0,0
+59,male,Non-anginal pain,126,218,TRUE,ST-T Wave abnormality,134,no,2.2,Flatsloping,1,1,0
+40,male,Typical angina,152,223,FALSE,ST-T Wave abnormality,181,no,0,Downsloping,0,3,0
+46,male,Typical angina,140,311,FALSE,ST-T Wave abnormality,120,yes,1.8,Flatsloping,2,3,0
+59,male,Asymptomatic,134,204,FALSE,ST-T Wave abnormality,162,no,0.8,Downsloping,2,2,0
+57,male,Typical angina,110,335,FALSE,ST-T Wave abnormality,143,yes,3,Flatsloping,1,3,0
+61,male,Typical angina,148,203,FALSE,ST-T Wave abnormality,161,no,0,Downsloping,1,3,0
+44,male,Typical angina,120,169,FALSE,ST-T Wave abnormality,144,yes,2.8,Upsloping,0,1,0
+63,female,Typical angina,124,197,FALSE,ST-T Wave abnormality,136,yes,0,Flatsloping,0,2,0
+57,female,Typical angina,140,241,FALSE,ST-T Wave abnormality,123,yes,0.2,Flatsloping,0,3,0
+45,male,Asymptomatic,110,264,FALSE,ST-T Wave abnormality,132,no,1.2,Flatsloping,0,3,0
+68,male,Typical angina,144,193,TRUE,ST-T Wave abnormality,141,no,3.4,Flatsloping,2,3,0
+57,male,Typical angina,130,131,FALSE,ST-T Wave abnormality,115,yes,1.2,Flatsloping,1,3,0

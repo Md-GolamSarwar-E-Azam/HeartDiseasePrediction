@@ -4,269 +4,252 @@
 
 {% block content %}
 <section class="page-intro">
-    <div class="eyebrow"><span class="eyebrow-line"></span> A thoughtful first check</div>
-    <h1>Understand your <span>heart health.</span></h1>
+    <div class="eyebrow"><span class="eyebrow-line"></span> Screening assessment</div>
+    <h1>Cardio<span>Check</span></h1>
     <p class="intro-copy">
-        Enter the health measurements below to receive a machine-learning screening result.
-        Choose the closest matching option when a dropdown is provided. Open “What does this mean?”
-        beside a field for a plain-language definition.
+        Enter values from a medical record or test report for a calm screening estimate.
+        This is not a diagnosis.
     </p>
 </section>
 
-<section class="form-card" aria-labelledby="form-title">
-    <div class="form-card-heading">
+<section class="assessment-shell" aria-labelledby="form-title">
+    <div class="assessment-toolbar">
         <div>
             <p class="section-kicker">YOUR ASSESSMENT</p>
             <h2 id="form-title">Health information</h2>
         </div>
-        <span class="secure-note">
-            <svg viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M5.5 8V5.8a4.5 4.5 0 0 1 9 0V8m-10 0h11v9h-11z" />
-                <circle cx="10" cy="12" r="1" />
-            </svg>
-            No name required
-        </span>
+        <div class="toolbar-actions">
+            <button type="button" class="ghost-button" id="demo-fill">Fill demo values</button>
+            <span class="secure-note">
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M5.5 8V5.8a4.5 4.5 0 0 1 9 0V8m-10 0h11v9h-11z" />
+                    <circle cx="10" cy="12" r="1" />
+                </svg>
+                No name required
+            </span>
+        </div>
     </div>
 
-    <form action="{{ url_for('predict_datapoint') }}" method="post" class="assessment-form">
-        <fieldset class="form-section">
-            <legend><span class="section-number">01</span> About you</legend>
+    <ol class="progress-track" aria-label="Assessment progress">
+        <li class="progress-step is-active"><span>1</span> About you</li>
+        <li class="progress-step"><span>2</span> Vitals &amp; labs</li>
+        <li class="progress-step"><span>3</span> Heart tests</li>
+    </ol>
+
+    <form id="assessment-form" action="{{ url_for('predict_datapoint') }}" method="post" class="assessment-form" novalidate>
+        <fieldset class="form-step is-active" data-step="0">
+            <legend>About you</legend>
             <div class="field-grid">
                 <div class="field">
-                    <label for="age">Age <span class="unit">(years)</span></label>
+                    <label for="age">
+                        Age <span class="unit">(years)</span>
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Age in completed years when the measurements were recorded.</span>
+                        </span>
+                    </label>
                     <input id="age" name="age" type="number" min="1" max="120" step="1"
                            placeholder="e.g. 45" required>
-                    <small>Enter your age in years. Examples: 29, 45, 60.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>Age in completed years at the time the health measurements were recorded.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="sex">Sex</label>
+                    <label for="sex">
+                        Sex
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Use the sex category recorded in the health record.</span>
+                        </span>
+                    </label>
                     <select id="sex" name="sex" required>
                         <option value="" selected disabled>Select an option</option>
-                        <option value="0">0 — Female</option>
-                        <option value="1">1 — Male</option>
+                        <option value="0">Female</option>
+                        <option value="1">Male</option>
                     </select>
-                    <small>Select the category recorded in the source health record.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>The dataset category is recorded as:</p>
-                        <ul>
-                            <li><strong>0 — Female</strong></li>
-                            <li><strong>1 — Male</strong></li>
-                        </ul>
-                    </details>
                 </div>
+            </div>
+            <div class="step-actions">
+                <span></span>
+                <button type="button" class="submit-button" data-next>Continue</button>
             </div>
         </fieldset>
 
-        <fieldset class="form-section">
-            <legend><span class="section-number">02</span> Blood pressure &amp; cholesterol</legend>
+        <fieldset class="form-step" data-step="1" hidden>
+            <legend>Vitals &amp; labs</legend>
             <div class="field-grid">
                 <div class="field">
-                    <label for="trestbps">Resting blood pressure <span class="unit">(mm Hg)</span></label>
+                    <label for="trestbps">
+                        Resting blood pressure <span class="unit">(mm Hg)</span>
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Resting systolic blood pressure from the medical record.</span>
+                        </span>
+                    </label>
                     <input id="trestbps" name="trestbps" type="number" min="0" step="1"
                            placeholder="e.g. 120" required>
-                    <small>Resting measurement; examples: 120, 140, 150.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>Blood pressure measured while resting, recorded in millimeters of mercury (mm Hg). Use the value from the medical record.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="chol">Serum cholesterol <span class="unit">(mg/dL)</span></label>
+                    <label for="chol">
+                        Serum cholesterol <span class="unit">(mg/dL)</span>
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Cholesterol value from a lab report, in mg/dL.</span>
+                        </span>
+                    </label>
                     <input id="chol" name="chol" type="number" min="0" step="1"
                            placeholder="e.g. 200" required>
-                    <small>Use the value from your lab report; examples: 180, 220, 250.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>Serum cholesterol is the cholesterol measurement in a blood sample. Enter the lab value in mg/dL.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="fbs">Fasting blood sugar above 120 mg/dL?</label>
+                    <label for="fbs">
+                        Fasting blood sugar above 120 mg/dL?
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Choose the fasting glucose result documented by the clinician or lab.</span>
+                        </span>
+                    </label>
                     <select id="fbs" name="fbs" required>
                         <option value="" selected disabled>Select an option</option>
-                        <option value="1">1 — Yes (above 120 mg/dL)</option>
-                        <option value="0">0 — No (not above 120 mg/dL)</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
-                    <small>Choose the result documented for a fasting blood sample.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>This records whether fasting blood glucose was greater than 120 mg/dL:</p>
-                        <ul>
-                            <li><strong>1 — Yes:</strong> above 120 mg/dL</li>
-                            <li><strong>0 — No:</strong> not above 120 mg/dL</li>
-                        </ul>
-                        <p>Use the result documented by the clinician or lab; do not estimate from a non-fasting test.</p>
-                    </details>
                 </div>
+            </div>
+            <div class="step-actions">
+                <button type="button" class="ghost-button" data-prev>Back</button>
+                <button type="button" class="submit-button" data-next>Continue</button>
             </div>
         </fieldset>
 
-        <fieldset class="form-section">
-            <legend><span class="section-number">03</span> Heart test results</legend>
+        <fieldset class="form-step" data-step="2" hidden>
+            <legend>Heart tests</legend>
             <div class="field-grid">
                 <div class="field">
-                    <label for="cp">Chest pain type</label>
+                    <label for="cp">
+                        Chest pain type
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Use the chest-pain category written in the medical record, not a self-diagnosis.</span>
+                        </span>
+                    </label>
                     <select id="cp" name="cp" required>
                         <option value="" selected disabled>Select the recorded type</option>
-                        <option value="0">0 — Typical angina</option>
-                        <option value="1">1 — Atypical angina</option>
-                        <option value="2">2 — Non-anginal pain</option>
-                        <option value="3">3 — Asymptomatic</option>
+                        <option value="0">Typical angina</option>
+                        <option value="1">Atypical angina</option>
+                        <option value="2">Non-anginal pain</option>
+                        <option value="3">Asymptomatic</option>
                     </select>
-                    <small>Use the category from the medical record, not a self-diagnosis.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>Choose the category documented in the medical record. These labels describe how the pain was classified during assessment; they are not a way to diagnose the cause of your own symptoms.</p>
-                        <ul>
-                            <li><strong>0 — Typical angina:</strong> a chest discomfort pattern classified as typical angina.</li>
-                            <li><strong>1 — Atypical angina:</strong> a pattern with some, but not all, features of typical angina.</li>
-                            <li><strong>2 — Non-anginal pain:</strong> pain classified as not having the typical angina pattern.</li>
-                            <li><strong>3 — Asymptomatic:</strong> no chest-pain symptoms reported for this assessment.</li>
-                        </ul>
-                        <p>Angina is chest discomfort that can occur when the heart muscle does not get enough blood flow. A clinician must interpret its cause.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="restecg">Resting ECG result</label>
+                    <label for="restecg">
+                        Resting ECG result
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Select the resting electrocardiogram category from the report.</span>
+                        </span>
+                    </label>
                     <select id="restecg" name="restecg" required>
                         <option value="" selected disabled>Select the recorded result</option>
-                        <option value="0">0 — Normal / no notable finding</option>
-                        <option value="1">1 — ST-T wave abnormality</option>
-                        <option value="2">2 — Left ventricular hypertrophy</option>
+                        <option value="0">Normal / no notable finding</option>
+                        <option value="1">ST-T wave abnormality</option>
+                        <option value="2">Left ventricular hypertrophy</option>
                     </select>
-                    <small>Resting electrocardiographic result.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>An ECG (electrocardiogram) records the heart’s electrical signals. Select the resting ECG category written in the report:</p>
-                        <ul>
-                            <li><strong>0 — Normal / no notable finding:</strong> no finding represented by the other categories.</li>
-                            <li><strong>1 — ST-T wave abnormality:</strong> a change noted in parts of the ECG tracing.</li>
-                            <li><strong>2 — Left ventricular hypertrophy:</strong> an ECG category associated with increased muscle thickness in the heart’s main pumping chamber.</li>
-                        </ul>
-                        <p>Only a health professional can interpret what an ECG finding means for an individual.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="thalach">Maximum heart rate achieved <span class="unit">(bpm)</span></label>
+                    <label for="thalach">
+                        Maximum heart rate achieved <span class="unit">(bpm)</span>
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Highest heart rate recorded during the exercise or stress test.</span>
+                        </span>
+                    </label>
                     <input id="thalach" name="thalach" type="number" min="0" step="1"
                            placeholder="e.g. 160" required>
-                    <small>Use the recorded test value; examples: 160, 180, 190.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>The highest heart rate recorded during the exercise or stress test, measured in beats per minute (bpm).</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="exang">Exercise-induced angina?</label>
+                    <label for="exang">
+                        Exercise-induced angina?
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Whether angina was recorded during an exercise test.</span>
+                        </span>
+                    </label>
                     <select id="exang" name="exang" required>
                         <option value="" selected disabled>Select an option</option>
-                        <option value="1">1 — Yes</option>
-                        <option value="0">0 — No</option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
                     </select>
-                    <small>Angina means chest discomfort recorded during exercise.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>Records whether angina (chest discomfort classified by a clinician) occurred during an exercise test:</p>
-                        <ul>
-                            <li><strong>1 — Yes:</strong> exercise-induced angina was recorded.</li>
-                            <li><strong>0 — No:</strong> exercise-induced angina was not recorded.</li>
-                        </ul>
-                        <p>Use the test report rather than trying to infer this value from symptoms.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="oldpeak">ST depression <span class="unit">(oldpeak)</span></label>
+                    <label for="oldpeak">
+                        ST depression <span class="unit">(oldpeak)</span>
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Exercise-related ST depression compared with rest, from the test report.</span>
+                        </span>
+                    </label>
                     <input id="oldpeak" name="oldpeak" type="number" step="any"
                            placeholder="e.g. 1.0" required>
-                    <small>Exercise-related ST depression compared with rest; examples: 0.5, 1.0, 2.0.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p><strong>Oldpeak</strong> is a numeric measurement of ST-segment depression on an ECG during exercise compared with rest. Enter the exact test-report value; examples include 0.5, 1.0, and 2.0. This app does not define a normal range.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="slope">Peak exercise ST segment slope</label>
+                    <label for="slope">
+                        Peak exercise ST segment slope
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Direction of the ST segment at peak exercise from the test report.</span>
+                        </span>
+                    </label>
                     <select id="slope" name="slope" required>
                         <option value="" selected disabled>Select the recorded slope</option>
-                        <option value="0">0 — Upsloping</option>
-                        <option value="1">1 — Flat</option>
-                        <option value="2">2 — Downsloping</option>
+                        <option value="0">Upsloping</option>
+                        <option value="1">Flatsloping</option>
+                        <option value="2">Downsloping</option>
                     </select>
-                    <small>Choose the result recorded during the exercise test.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>This describes the direction of the ECG’s ST segment at peak exercise. Select the category recorded by the test:</p>
-                        <ul>
-                            <li><strong>0 — Upsloping:</strong> the segment rises.</li>
-                            <li><strong>1 — Flat:</strong> the segment is level.</li>
-                            <li><strong>2 — Downsloping:</strong> the segment falls.</li>
-                        </ul>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="ca">Major vessels seen by fluoroscopy</label>
+                    <label for="ca">
+                        Major vessels seen by fluoroscopy
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Number of major vessels noted in the imaging report.</span>
+                        </span>
+                    </label>
                     <select id="ca" name="ca" required>
                         <option value="" selected disabled>Select a count</option>
-                        <option value="0">Code 0 — 0 vessels</option>
-                        <option value="1">Code 1 — 1 vessel</option>
-                        <option value="2">Code 2 — 2 vessels</option>
-                        <option value="3">Code 3 — 3 vessels</option>
+                        <option value="0">0 vessels</option>
+                        <option value="1">1 vessel</option>
+                        <option value="2">2 vessels</option>
+                        <option value="3">3 vessels</option>
                     </select>
-                    <small>Recorded count from 0 to 3.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>Fluoroscopy is an imaging method that uses X-rays to show structures in motion. This field records the number of major vessels noted in the report:</p>
-                        <ul>
-                            <li><strong>Code 0:</strong> 0 vessels</li>
-                            <li><strong>Code 1:</strong> 1 vessel</li>
-                            <li><strong>Code 2:</strong> 2 vessels</li>
-                            <li><strong>Code 3:</strong> 3 vessels</li>
-                        </ul>
-                        <p>Select the recorded count; do not estimate it yourself.</p>
-                    </details>
                 </div>
                 <div class="field">
-                    <label for="thal">Thallium stress result</label>
+                    <label for="thal">
+                        Thallium stress result
+                        <span class="help-tip" tabindex="0" aria-label="Help">?
+                            <span class="help-tip__content">Select the thallium stress-test category shown in the medical record.</span>
+                        </span>
+                    </label>
                     <select id="thal" name="thal" required>
                         <option value="" selected disabled>Select the recorded result</option>
-                        <option value="1">1 — Normal (category 1)</option>
-                        <option value="3">3 — Normal (category 3)</option>
-                        <option value="6">6 — Fixed defect</option>
-                        <option value="7">7 — Reversible defect</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Fixed defect</option>
+                        <option value="3">Reversible defect</option>
+                        <option value="0">Unknown / not coded</option>
                     </select>
-                    <small>Select the code shown in the medical record.</small>
-                    <details class="field-help">
-                        <summary>What does this mean?</summary>
-                        <p>A thallium stress test is a type of nuclear imaging test that helps clinicians assess blood flow to the heart muscle. Select the report’s category:</p>
-                        <ul>
-                            <li><strong>1 or 3 — Normal:</strong> the dataset lists both codes as normal categories.</li>
-                            <li><strong>6 — Fixed defect:</strong> a finding that appears persistent across parts of the test.</li>
-                            <li><strong>7 — Reversible defect:</strong> a finding that changes between parts of the test.</li>
-                        </ul>
-                        <p>These are dataset labels, not a medical interpretation. Ask the clinician who ordered the test what your result means.</p>
-                    </details>
                 </div>
             </div>
+
+            <div class="review-panel" aria-live="polite">
+                <p class="section-kicker">Quick review</p>
+                <ul id="review-list" class="review-list"></ul>
+            </div>
+
+            <div class="form-notice" role="note">
+                <span class="notice-icon" aria-hidden="true">i</span>
+                <p>Use measurements from a qualified health professional or medical record. This tool provides an estimate, not medical advice.</p>
+            </div>
+
+            <div class="step-actions">
+                <button type="button" class="ghost-button" data-prev>Back</button>
+                <button class="submit-button" type="submit">
+                    Get screening report
+                    <svg viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M4 10h11m-5-5 5 5-5 5" />
+                    </svg>
+                </button>
+            </div>
         </fieldset>
-
-        <div class="form-notice" role="note">
-            <span class="notice-icon" aria-hidden="true">i</span>
-            <p>Use measurements from a qualified health professional or medical record. This tool provides an estimate, not medical advice.</p>
-        </div>
-
-        <button class="submit-button" type="submit">
-            Get screening result
-            <svg viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M4 10h11m-5-5 5 5-5 5" />
-            </svg>
-        </button>
     </form>
 </section>
 
 <p class="page-footnote">If you have chest pain or another urgent symptom, seek immediate medical care.</p>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/assessment.js') }}"></script>
 {% endblock %}

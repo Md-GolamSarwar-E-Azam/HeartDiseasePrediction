@@ -21,6 +21,7 @@ def save_object(file_path, obj):
 def eveluate_models(X_train, y_train, models, param):
     try:
         report = {}
+        best_params = {}
         cv = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
         scoring = make_scorer(f1_score, zero_division=0)
 
@@ -36,8 +37,9 @@ def eveluate_models(X_train, y_train, models, param):
 
             models[model_name] = gs.best_estimator_
             report[model_name] = gs.best_score_
+            best_params[model_name] = gs.best_params_
 
-        return report
+        return report, best_params
 
     except Exception as e:
         raise CustomException(e, sys)

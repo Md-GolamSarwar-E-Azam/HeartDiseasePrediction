@@ -1,51 +1,77 @@
 {% extends "base.html" %}
 
-{% block title %}Your Screening Result · CardioCheck{% endblock %}
+{% block title %}Screening Report · CardioCheck{% endblock %}
 
 {% block content %}
-{% set detected = results|int == 1 %}
-<section class="result-page">
-    <a class="back-link" href="{{ url_for('index') }}">
-        <svg viewBox="0 0 20 20" aria-hidden="true">
-            <path d="M16 10H5m5 5-5-5 5-5" />
-        </svg>
-        New assessment
-    </a>
-
-    <article class="result-card {{ 'result-card--positive' if detected else 'result-card--negative' }}">
-        <div class="result-orbit" aria-hidden="true">
-            <div class="result-icon">
-                {% if detected %}
-                <svg viewBox="0 0 64 64" fill="none">
-                    <path d="M32 53S8 39 8 22a13 13 0 0 1 24-6.6A13 13 0 0 1 56 22c0 17-24 31-24 31Z" />
-                    <path d="M16 32h10l4-8 7 17 5-9h7" />
-                </svg>
-                {% else %}
-                <svg viewBox="0 0 64 64" fill="none">
-                    <path d="M32 53S8 39 8 22a13 13 0 0 1 24-6.6A13 13 0 0 1 56 22c0 17-24 31-24 31Z" />
-                    <path d="m23 32 6 6 13-14" />
-                </svg>
-                {% endif %}
-            </div>
+<section class="report-page">
+    <div class="report-toolbar no-print">
+        <a class="back-link" href="{{ url_for('index') }}">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M16 10H5m5 5-5-5 5-5" />
+            </svg>
+            New assessment
+        </a>
+        <div class="report-toolbar__actions">
+            <button type="button" class="ghost-button" onclick="window.print()">Print / Save PDF</button>
+            <a class="submit-button report-toolbar__cta" href="{{ url_for('index') }}">Start another assessment</a>
         </div>
+    </div>
 
-        <p class="result-eyebrow">{{ "SCREENING SIGNAL" if detected else "SCREENING SUMMARY" }}</p>
-        <h1>
-            {% if detected %}
-                Potential heart disease <span>found</span>
-            {% else %}
-                No potential heart disease <span>found</span>
+    <article class="report-sheet {{ 'report-sheet--concern' if report.higher_concern else 'report-sheet--calm' }}">
+        <header class="report-header">
+            <div>
+                <p class="section-kicker">CardioCheck screening report</p>
+                <h1>Clinical-style summary</h1>
+                <p class="report-meta">Generated {{ report.generated_at }} · Not a diagnosis</p>
+            </div>
+            <div class="report-signal {{ 'report-signal--concern' if report.higher_concern else 'report-signal--calm' }}">
+                <span class="report-signal__label">Overall signal</span>
+                <strong>{{ report.signal_title }}</strong>
+            </div>
+        </header>
+
+        <p class="report-summary">{{ report.signal_summary }}</p>
+
+        <section class="report-section" aria-labelledby="findings-title">
+            <h2 id="findings-title">Submitted values vs reference</h2>
+            <div class="findings-table-wrap">
+                <table class="findings-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Measurement</th>
+                            <th scope="col">Your value</th>
+                            <th scope="col">Reference</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in report.findings %}
+                        <tr>
+                            <td data-label="Measurement">{{ item.name }}</td>
+                            <td data-label="Your value"><strong>{{ item.value }}</strong></td>
+                            <td data-label="Reference">{{ item.reference }}</td>
+                            <td data-label="Status">
+                                <span class="status-chip status-chip--{{ item.status }}">{{ item.status_label }}</span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="report-section" aria-labelledby="explainer-title">
+            <h2 id="explainer-title">Simple explainer</h2>
+            <p class="explainer-intro">{{ report.explainer_intro }}</p>
+            {% if report.explainer_bullets %}
+            <ul class="explainer-list">
+                {% for bullet in report.explainer_bullets %}
+                <li>{{ bullet }}</li>
+                {% endfor %}
+            </ul>
             {% endif %}
-        </h1>
-        <p class="result-copy">
-            {% if detected %}
-                The model identified a potential heart-disease signal in the information provided.
-                Please discuss this result with a qualified healthcare professional.
-            {% else %}
-                The model did not identify a potential heart-disease signal in the information provided.
-                This result does not rule out heart disease or replace medical advice.
-            {% endif %}
-        </p>
+            <p class="honesty-note">{{ report.honesty_note }}</p>
+        </section>
 
         <div class="result-disclaimer">
             <svg viewBox="0 0 20 20" aria-hidden="true">
@@ -54,15 +80,8 @@
             </svg>
             <p>This is an automated screening estimate, not a diagnosis. If you have symptoms or concerns, contact a medical professional. For urgent symptoms, seek emergency care.</p>
         </div>
-
-        <a class="submit-button result-button" href="{{ url_for('index') }}">
-            Start another assessment
-            <svg viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M4 10h11m-5-5 5 5-5 5" />
-            </svg>
-        </a>
     </article>
 
-    <p class="page-footnote">Your result is based on the submitted values and the model currently available in this app.</p>
+    <p class="page-footnote no-print">Your result is based on the submitted values and the model currently available in this app.</p>
 </section>
 {% endblock %}
