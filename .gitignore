@@ -160,6 +160,7 @@ env.bak/
 venv.bak/
 heartenv
 mlruns
+docs
 
 # Spyder project settings
 .spyderproject
@@ -226,3 +227,5 @@ mlflow.db
 mlruns/
 logs/
 catboost_info/
+
+
