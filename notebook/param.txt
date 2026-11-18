@@ -1,0 +1,89 @@
+            params = {
+                "Decision Tree": {
+                    "criterion": ["gini", "entropy", "log_loss"],
+                    "splitter": ["best", "random"],
+                    "max_features": ["sqrt", "log2"],
+                },
+                "Random Forest": {
+                    "n_estimators": [50, 100, 200],
+                    "max_features": ["sqrt", "log2"],
+                },
+                "Gradient Boosting": {
+                    "learning_rate": [0.05, 0.1],
+                    "n_estimators": [50, 100],
+                    "max_depth": [2, 3],
+                },
+                "Logistic Regression": {
+                    "C": [0.1, 1.0, 10.0],
+                    "class_weight": [None, "balanced"],
+                },
+                "K-Neighbors Classifier": {
+                    "n_neighbors": [3, 5, 7, 9],
+                    "weights": ["uniform", "distance"],
+                },
+                "XGBClassifier": {
+                    "learning_rate": [0.05, 0.1],
+                    "n_estimators": [50, 100],
+                    "max_depth": [3, 5],
+                },
+                "CatBoosting Classifier": {
+                    "depth": [4, 6, 8],
+                    "learning_rate": [0.03, 0.1],
+                    "iterations": [50, 100],
+                },
+                "AdaBoost Classifier": {
+                    "learning_rate": [0.05, 0.1, 0.5],
+                    "n_estimators": [50, 100],
+                },
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            params = {
+                "Decision Tree": {
+                    "criterion": ["gini", "entropy", "log_loss"],
+                    "splitter": ["best", "random"],
+                    "max_features": ["sqrt", "log2"],
+                },
+                "Random Forest": {
+                    "n_estimators": [50, 100, 200, 300],
+                    "max_features": ["sqrt", "log2"],
+                },
+                "Gradient Boosting": {
+                    "learning_rate": [0.05, 0.1],
+                    "n_estimators": [50, 100],
+                    "max_depth": [2, 3],
+                },
+                "Logistic Regression": {
+                    "C": [0.1, 1.0, 10.0, 20.0],
+                    "class_weight": [None, "balanced"],
+                },
+                "K-Neighbors Classifier": {
+                    "n_neighbors": [3, 5, 7, 9],
+                    "weights": ["uniform", "distance"],
+                },
+                "XGBClassifier": {
+                    "learning_rate": [0.05, 0.1, 0.2, 0.3],
+                    "n_estimators": [50, 100, 200, 300],
+                    "max_depth": [3, 5, 7, 9],
+                },
+                "CatBoosting Classifier": {
+                    "depth": [4, 6, 8, 10],
+                    "learning_rate": [0.03, 0.1],
+                    "iterations": [50, 100],
+                },
+                "AdaBoost Classifier": {
+                    "learning_rate": [0.05, 0.1, 0.5],
+                    "n_estimators": [50, 100],
+                },
+            }

@@ -62,6 +62,7 @@ class ModelTrainer:
                 ),
                 "AdaBoost Classifier": AdaBoostClassifier(random_state=42),
             }
+            
             params = {
                 "Decision Tree": {
                     "criterion": ["gini", "entropy", "log_loss"],
@@ -100,6 +101,7 @@ class ModelTrainer:
                     "n_estimators": [50, 100],
                 },
             }
+
 
             model_report, best_params = eveluate_models(
                 X_train=X_train,
