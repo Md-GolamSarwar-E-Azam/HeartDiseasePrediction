@@ -160,7 +160,7 @@ env.bak/
 venv.bak/
 heartenv
 mlruns
-docs
+docs/
 
 # Spyder project settings
 .spyderproject
